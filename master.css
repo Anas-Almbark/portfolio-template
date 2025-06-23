@@ -1,0 +1,120 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --primary-color: #161513;
+  --secondary-color: #222222;
+}
+body {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "Plus Jakarta Sans";
+}
+.standard-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header > div.box {
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+header nav {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo-box h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 34px;
+}
+header nav .links-box ul {
+  display: flex;
+  list-style: none;
+}
+header nav .links-box ul li a {
+  display: block;
+  padding: 14px 20px;
+  margin: 0 14px;
+  color: inherit;
+  border-radius: 4px;
+}
+header nav .links-box ul li a:hover {
+  background: linear-gradient(
+    65deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  transition: 0.3s;
+}
+header .main-header {
+  text-align: center;
+  padding: 52px 0 32px;
+}
+header .main-header .box img {
+  width: 250px;
+}
+header .main-header .box h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  max-width: 50%;
+  margin: 14px auto;
+}
+header .main-header .box h1 span {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: transparent;
+  background-clip: text;
+}
+header .main-header .box p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  max-width: 60%;
+  margin: 0 auto 14px;
+  text-wrap: wrap;
+  line-height: 1.8;
+  color: #c5c5c5;
+}
+header .main-header .box .btns-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 24px;
+}
+header .main-header .box .btns-box a {
+  all: unset;
+  background-color: #fff;
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 24px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  font-weight: 500;
+}
+header .main-header .box .btns-box a:last-child {
+  background-color: transparent;
+  color: #fff;
+}
+header .main-header .box .btns-box a:last-child:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
