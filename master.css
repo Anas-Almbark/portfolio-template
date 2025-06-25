@@ -11,6 +11,7 @@
 :root {
   --primary-color: #161513;
   --secondary-color: #222222;
+  --text-color: #c5c5c5;
 }
 body {
   background-color: var(--primary-color);
@@ -88,7 +89,7 @@ header .main-header .box p {
   margin: 0 auto 14px;
   text-wrap: wrap;
   line-height: 1.8;
-  color: #c5c5c5;
+  color: var(--text-color);
 }
 header .main-header .box .btns-box {
   display: flex;
@@ -117,4 +118,73 @@ header .main-header .box .btns-box a:last-child:hover {
   background-color: #fff;
   color: var(--primary-color);
   transition: 0.3s;
+}
+.experience h2 {
+  color: var(--text-color);
+  margin: 30px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience .lang ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+}
+.experience .lang ul li img {
+  width: 45px;
+  margin: 10px 18px;
+  object-fit: cover;
+  aspect-ratio: 2 / 2;
+  user-select: none;
+}
+.projects {
+  margin: 50px 0;
+}
+.projects h1 {
+  font-size: 38px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff8660, #d5491d);
+  color: transparent;
+  background-clip: text;
+}
+.projects .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects .cards .card {
+  margin: 10px 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #2a2a2a;
+}
+.projects .cards .card img {
+  max-width: 400px;
+}
+.projects .cards .card .info {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .cards .card .info .text span {
+  display: block;
+  color: var(--text-color);
+  font-size: 11px;
+  margin: 6px 0;
+}
+.projects .cards .card .info .icon a {
+  color: #fff;
+}
+.projects .cards .card .info .icon i {
+  transform: rotate(45deg);
 }
