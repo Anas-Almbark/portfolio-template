@@ -41,6 +41,12 @@ header nav .logo-box h1 {
   font-family: "Plus Jakarta Sans";
   font-size: 34px;
 }
+header nav .menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
 header nav .links-box ul {
   display: flex;
   list-style: none;
@@ -69,6 +75,9 @@ header .main-header {
 }
 header .main-header .box img {
   width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 header .main-header .box h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -90,7 +99,7 @@ header .main-header .box h1 span {
 }
 header .main-header .box p {
   font-family: "Plus Jakarta Sans", sans-serif;
-  max-width: 60%;
+  max-width: 65%;
   margin: 0 auto 14px;
   text-wrap: wrap;
   line-height: 1.8;
@@ -235,7 +244,7 @@ header .main-header .box .btns-box a:last-child:hover {
   line-height: 1.6;
 }
 .contact {
-  padding: 50px 0;
+  padding: 50px 20px;
   background-color: #191919;
 }
 .contact h2 {
@@ -277,4 +286,130 @@ header .main-header .box .btns-box a:last-child:hover {
 }
 .contact .social-media ul li a:hover {
   color: var(--text-color);
+}
+
+@media (max-width: 992px) {
+  header nav .links-box ul {
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 200px;
+    display: none;
+  }
+  header nav .menu-toggle {
+    display: block;
+  }
+
+  .links-box {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 999;
+  }
+
+  .links-box ul {
+    flex-direction: column;
+  }
+
+  .links-box ul li {
+    margin-bottom: 12px;
+  }
+
+  .links-box ul li a {
+    margin: 0;
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .links-box.active {
+    display: block;
+  }
+  header nav .links-box ul li {
+    margin: 10px 0;
+  }
+
+  header .main-header .box h1,
+  header .main-header .box p {
+    max-width: 90%;
+  }
+
+  .header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience .lang ul {
+    flex-wrap: wrap;
+  }
+
+  .projects .cards {
+    grid-template-columns: repeat(1, minmax(250px, 500px));
+    gap: 20px;
+  }
+
+  .experience-section .cards .card {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .contact .social-media ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact .social-media ul li a {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .main-header .box img {
+    width: 180px;
+  }
+
+  header .main-header .box h1 {
+    font-size: 28px;
+  }
+
+  .projects h1,
+  .experience-section h2 {
+    font-size: 28px;
+  }
+  .experience-section .cards .card .header-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+
+  .contact p {
+    font-size: 14px;
+  }
+
+  .projects .cards .card .info {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .experience .lang ul li img {
+    width: 36px;
+    margin: 8px 12px;
+  }
+
+  header .main-header .box .btns-box {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
